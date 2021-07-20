@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 7aa3ee36b3abc44a89bab770f112752b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - hpDrop: {fileID: 2466693887239443128, guid: 19a9c2e44f1ca46a68c6c0370d20ca50, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
