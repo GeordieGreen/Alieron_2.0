@@ -11,12 +11,14 @@ namespace OneManEscapePlan.SpaceRailShooter.Scripts.Gameplay {
 		public int y = 0;
 		public int z = 6;
 
+		public GameObject speedLines;
+
 		[SerializeField] private PlayerSpacecraft playerSpacecraft;
 		Vector3 speed;
 
 		private void Start()
         {
-			
+			speedLines.GetComponent<ParticleSystem>().Stop();
 		}
 
         private void Update()
@@ -24,22 +26,23 @@ namespace OneManEscapePlan.SpaceRailShooter.Scripts.Gameplay {
             if (UnityEngine.Input.GetKey(KeyCode.LeftShift))
             {
 				z = 15;
-				
+				speedLines.GetComponent<ParticleSystem>().Play();
 
-				
+
 			}
 
             if (UnityEngine.Input.GetButton("Boost"))
             {
 				z = 15;
-				
+				speedLines.GetComponent<ParticleSystem>().Play();
 
 			}
 
             else
             {
 				z = 8;
-            }
+				speedLines.GetComponent<ParticleSystem>().Stop();
+			}
 			speed = new Vector3(x, y, z);
 		}
 
