@@ -19,7 +19,6 @@ public class MechBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //transform.position += new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")) * speed * Time.deltaTime;
         transform.Translate(Vector3.right * Input.GetAxisRaw("Horizontal") * speed * Time.deltaTime);
         transform.Translate(Vector3.forward * Input.GetAxisRaw("ZAxis") * speed * Time.deltaTime);
         bulletTimer -= Time.deltaTime;
