@@ -12,6 +12,8 @@ public class CamManager : MonoBehaviour
     [SerializeField] private Camera cutsceneCam6;
     [SerializeField] private Camera playerCam;
     public GameObject mech;
+    public GameObject boss;
+    public GameObject bounds3;
     [SerializeField] private GameObject blackBars;
 
     
@@ -28,6 +30,8 @@ public class CamManager : MonoBehaviour
         cutsceneCam6.enabled = false;
         playerCam.enabled = false;
         mech.SetActive(false);
+        boss.SetActive(false);
+        bounds3.SetActive(false);
         
         Invoke("CamSwitch1", 5f);
         Invoke("CamSwitch2", 10f);
@@ -116,6 +120,8 @@ public class CamManager : MonoBehaviour
     void MechEnabled()
     {
         mech.SetActive(true);
+        boss.SetActive(true);
+        bounds3.SetActive(true);
     }
 
 }

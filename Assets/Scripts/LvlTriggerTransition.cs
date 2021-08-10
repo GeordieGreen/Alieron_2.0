@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class LvlTriggerTransition : MonoBehaviour
 {
+    public int sceneChanger;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,7 +16,8 @@ public class LvlTriggerTransition : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            SceneManager.LoadScene(SceneManager.sceneCount + 3);
+            SceneManager.LoadScene(sceneChanger);
+            Debug.Log("Colliding");
         }
     }
 }

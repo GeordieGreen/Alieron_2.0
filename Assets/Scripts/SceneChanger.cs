@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class SceneChanger : MonoBehaviour
 {
-    public float delay = 1090;
+    public float delay;
+    public int sceneSelect;
     
     void Start()
     {
@@ -15,6 +16,7 @@ public class SceneChanger : MonoBehaviour
     IEnumerator LoadLevelAfterDelay(float delay)
     {
         yield return new WaitForSeconds(delay);
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(sceneSelect);
+        
     }
 }

@@ -152,7 +152,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fcbb6fd93b939144b9032fea4585273, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 18
+  delay: 5
+  sceneSelect: 1
 --- !u!4 &126681756
 Transform:
   m_ObjectHideFlags: 0
@@ -463,10 +464,7 @@ MonoBehaviour:
 
 
 
-    Though  this  game  is  fully  playable with  Keyboard 
-    and  Mouse,
-
-    a  Controller  is  advised  for  maximum  enjoyment...'
+'
 --- !u!222 &1163017123
 CanvasRenderer:
   m_ObjectHideFlags: 0
