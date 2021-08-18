@@ -27,15 +27,23 @@ namespace OneManEscapePlan.SpaceRailShooter.Scripts.Gameplay {
             {
 				z = 15;
 				speedLines.GetComponent<ParticleSystem>().Play();
-
-
 			}
 
-            if (UnityEngine.Input.GetButton("Boost"))
+            else if (UnityEngine.Input.GetKey(KeyCode.LeftControl))
+            {
+				z = 0;
+            }
+
+			else if (UnityEngine.Input.GetButton("Break"))
+			{
+				z = 0;
+				Debug.Log("Breaking");
+			}
+
+			else if (UnityEngine.Input.GetButton("Boost"))
             {
 				z = 15;
 				speedLines.GetComponent<ParticleSystem>().Play();
-
 			}
 
             else
